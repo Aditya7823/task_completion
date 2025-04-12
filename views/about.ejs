@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('./partials/head') %>
+    <style>
+        .about-section {
+            padding: 50px;
+            text-align: center;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .about-section h1 {
+            color: #ff6600; /* Orange */
+        }
+
+        .about-section p {
+            max-width: 800px;
+            margin: 0 auto;
+            font-size: 1.2rem;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <%- include('./partials/nav') %>
+
+    <div class="about-section">
+        <h1>About BuyNAdd.com</h1>
+        <p>
+            Welcome to BuyNAdd.com — your trusted platform for adding and buying amazing products!
+            We make it easy for users to register, log in, and add their products like headphones, watches, bracelets, and phones to sell or manage. 
+            With a user-friendly interface and secure authentication, your shopping and selling experience is seamless and safe. 
+        </p>
+        <p>
+            Our mission is to empower sellers and delight buyers with simplicity and reliability. Whether you're adding products or discovering new gadgets, BuyNAdd is your go-to destination!
+        </p>
+    </div>
+
+    <%- include('./partials/scripts') %>
+</body>
+</html>

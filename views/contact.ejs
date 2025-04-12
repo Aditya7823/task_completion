@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('./partials/head') %>
+    <style>
+        .contact-section {
+            padding: 50px;
+            text-align: center;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .contact-section h1 {
+            color: #ff6600; /* Orange */
+        }
+
+        .contact-section p {
+            max-width: 800px;
+            margin: 0 auto;
+            font-size: 1.2rem;
+            line-height: 1.6;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .contact-form button {
+            padding: 10px 20px;
+            background-color: #ff6600;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .contact-form button:hover {
+            background-color: #e65c00;
+        }
+    </style>
+</head>
+<body>
+    <%- include('./partials/nav') %>
+
+    <div class="contact-section">
+        <h1>Contact Us</h1>
+        <p>
+            Have any questions or feedback? We're here to help! Please reach out to us using the form below, 
+            and we'll get back to you as soon as possible.
+        </p>
+
+        <div class="contact-form" style="max-width: 600px; margin: 0 auto;">
+            <form action="/contact" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </div>
+
+    <%- include('./partials/scripts') %>
+</body>
+</html>
